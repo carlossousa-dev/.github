@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C15"/>
+      <stop offset="50%" stop-color="#0D1322"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="hBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Gradients -->
+    <linearGradient id="hCyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+
+    <linearGradient id="hIndigoPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <linearGradient id="devBadgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+
+    <filter id="hGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Banner Box -->
+  <rect x="8" y="8" width="1184" height="304" rx="36" fill="url(#bannerBg)"/>
+  <rect x="8" y="8" width="1184" height="304" rx="36" fill="none" stroke="url(#hBorderGrad)" stroke-width="2"/>
+
+  <!-- Left Icon Mark (Scaled down from Avatar) -->
+  <g transform="translate(60, 48) scale(0.44)">
+    <!-- Squircle container -->
+    <rect x="0" y="0" width="512" height="512" rx="128" fill="#0B132B" stroke="url(#hBorderGrad)" stroke-width="6"/>
+    
+    <!-- C-Bracket -->
+    <path d="M 236 142 L 172 184 C 142 204 126 230 126 264 C 126 298 142 324 172 344 L 236 386" 
+          fill="none" stroke="url(#hCyanBlue)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" filter="url(#hGlow)"/>
+
+    <!-- S-Flow -->
+    <path d="M 342 168 C 298 144 250 184 250 224 C 250 268 358 254 358 310 C 358 354 296 380 256 356" 
+          fill="none" stroke="url(#hIndigoPurple)" stroke-width="30" stroke-linecap="round" filter="url(#hGlow)"/>
+
+    <circle cx="368" cy="202" r="12" fill="#38BDF8"/>
+  </g>
+
+  <!-- Typography Lockup -->
+  <g transform="translate(340, 140)">
+    <!-- Primary Name -->
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+          font-size="74" font-weight="800" fill="url(#textGrad)" letter-spacing="-1.5">
+      carlos sousa
+    </text>
+
+    <!-- .DEV Badge Pill -->
+    <g transform="translate(438, -58)">
+      <rect x="0" y="0" width="136" height="58" rx="16" fill="url(#devBadgeGrad)"/>
+      <text x="68" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+            font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+        .DEV
+      </text>
+    </g>
+
+    <!-- Tagline Subtitle -->
+    <text x="2" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-size="20" font-weight="600" fill="#94A3B8" letter-spacing="4.5">
+      SOFTWARE ENGINEERING • CLOUD ARCHITECTURE • AI
+    </text>
+  </g>
+</svg>
