@@ -1,7 +1,8 @@
 <div align="center">
 
-# 🚀 carlossousa.dev
-### Engenharia de Software, Cloud Infrastructure & Automação com IA
+<img src="./assets/banner.svg" alt="carlossousa.dev banner" width="100%" />
+
+<br/><br/>
 
 [![Website](https://img.shields.io/badge/Website-carlossousa.dev-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://carlossousa.dev)
 [![Email](https://img.shields.io/badge/Contacto-casousavng%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:casousavng@gmail.com)
