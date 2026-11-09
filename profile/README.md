@@ -5,7 +5,7 @@
 <br/><br/>
 
 [![Website](https://img.shields.io/badge/Website-carlossousa.dev-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://carlossousa.dev)
-[![Email](https://img.shields.io/badge/Contacto-casousavng%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:casousavng@gmail.com)
+[![Email](https://img.shields.io/badge/Contacto-me%40carlossousa.dev-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:me@carlossousa.dev)
 [![Status](https://img.shields.io/badge/Status-Activo%20%26%20Operacional-10b981?style=for-the-badge)](https://carlossousa.dev)
 
 ---
