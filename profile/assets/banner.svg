@@ -1,87 +1,114 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080C15"/>
-      <stop offset="50%" stop-color="#0D1322"/>
-      <stop offset="100%" stop-color="#030712"/>
+    <!-- Deep Enterprise Dark Background -->
+    <linearGradient id="hBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="70%" stop-color="#0D1322"/>
+      <stop offset="100%" stop-color="#03050A"/>
     </linearGradient>
 
-    <!-- Border Glow Gradient -->
-    <linearGradient id="hBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.5"/>
+    <!-- Glass Border Gradient -->
+    <linearGradient id="hGlassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.04"/>
     </linearGradient>
 
-    <!-- Gradients -->
-    <linearGradient id="hCyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#2563EB"/>
-    </linearGradient>
-
-    <linearGradient id="hIndigoPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#818CF8"/>
-      <stop offset="100%" stop-color="#9333EA"/>
-    </linearGradient>
-
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Titanium Steel Gradient -->
+    <linearGradient id="hTitanium" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
     </linearGradient>
 
-    <linearGradient id="devBadgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#6366F1"/>
+    <!-- Electric Cyan Gradient -->
+    <linearGradient id="hCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="60%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
     </linearGradient>
 
-    <filter id="hGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <!-- Emerald Pulse -->
+    <linearGradient id="hEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Badge Background -->
+    <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <filter id="hLaserGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
   <!-- Banner Box -->
-  <rect x="8" y="8" width="1184" height="304" rx="36" fill="url(#bannerBg)"/>
-  <rect x="8" y="8" width="1184" height="304" rx="36" fill="none" stroke="url(#hBorderGrad)" stroke-width="2"/>
+  <rect x="8" y="8" width="1184" height="304" rx="28" fill="url(#hBgGradient)"/>
+  <rect x="8" y="8" width="1184" height="304" rx="28" fill="none" stroke="url(#hGlassBorder)" stroke-width="1.5"/>
 
-  <!-- Left Icon Mark (Scaled down from Avatar) -->
-  <g transform="translate(60, 48) scale(0.44)">
-    <!-- Squircle container -->
-    <rect x="0" y="0" width="512" height="512" rx="128" fill="#0B132B" stroke="url(#hBorderGrad)" stroke-width="6"/>
-    
-    <!-- C-Bracket -->
-    <path d="M 236 142 L 172 184 C 142 204 126 230 126 264 C 126 298 142 324 172 344 L 236 386" 
-          fill="none" stroke="url(#hCyanBlue)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" filter="url(#hGlow)"/>
+  <!-- Left Icon Mark Container (Squircle Glass Card) -->
+  <g transform="translate(48, 48)">
+    <rect x="0" y="0" width="224" height="224" rx="52" fill="#0D1424" stroke="url(#hGlassBorder)" stroke-width="1.5"/>
 
-    <!-- S-Flow -->
-    <path d="M 342 168 C 298 144 250 184 250 224 C 250 268 358 254 358 310 C 358 354 296 380 256 356" 
-          fill="none" stroke="url(#hIndigoPurple)" stroke-width="30" stroke-linecap="round" filter="url(#hGlow)"/>
+    <!-- Architectural < CS /> Symbol -->
+    <g transform="translate(16, 16) scale(0.4)">
+      <!-- Left Bracket < -->
+      <path d="M 172 178 L 96 256 L 172 334" fill="none" stroke="url(#hCyan)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" filter="url(#hLaserGlow)"/>
 
-    <circle cx="368" cy="202" r="12" fill="#38BDF8"/>
+      <!-- Slash / -->
+      <line x1="324" y1="184" x2="284" y2="328" stroke="#64748B" stroke-width="18" stroke-linecap="round"/>
+
+      <!-- Right Bracket > -->
+      <path d="M 340 178 L 416 256 L 340 334" fill="none" stroke="url(#hCyan)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" filter="url(#hLaserGlow)"/>
+
+      <!-- CS Monogram -->
+      <path d="M 248 206 C 240 198 228 194 212 194 C 182 194 162 216 162 256 C 162 296 182 318 212 318 C 228 318 240 314 248 306" fill="none" stroke="url(#hTitanium)" stroke-width="22" stroke-linecap="round"/>
+      <path d="M 282 210 C 272 198 258 194 242 194 C 228 194 218 202 218 216 C 218 244 286 242 286 280 C 286 308 266 318 242 318 C 226 318 212 312 202 300" fill="none" stroke="url(#hTitanium)" stroke-width="22" stroke-linecap="round"/>
+    </g>
+
+    <!-- Emerald Pulse Dot -->
+    <circle cx="112" cy="192" r="4.5" fill="url(#hEmerald)"/>
+    <circle cx="112" cy="192" r="10" fill="#10B981" opacity="0.25"/>
   </g>
 
-  <!-- Typography Lockup -->
-  <g transform="translate(340, 140)">
-    <!-- Primary Name -->
-    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
-          font-size="74" font-weight="800" fill="url(#textGrad)" letter-spacing="-1.5">
+  <!-- Typography Hierarchy -->
+  <g transform="translate(310, 126)">
+    <!-- Main Name Title -->
+    <text x="0" y="0" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-size="68" font-weight="800" fill="url(#hTitanium)" letter-spacing="-1">
       carlos sousa
     </text>
 
-    <!-- .DEV Badge Pill -->
-    <g transform="translate(438, -58)">
-      <rect x="0" y="0" width="136" height="58" rx="16" fill="url(#devBadgeGrad)"/>
-      <text x="68" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-            font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
-        .DEV
+    <!-- .DEV Titanium Pill Badge -->
+    <g transform="translate(426, -52)">
+      <rect x="0" y="0" width="138" height="52" rx="14" fill="url(#badgeBg)" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.4"/>
+      <text x="69" y="36" font-family="'Fira Code', monospace" 
+            font-size="28" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="1">
+        .dev
       </text>
     </g>
 
-    <!-- Tagline Subtitle -->
-    <text x="2" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-          font-size="20" font-weight="600" fill="#94A3B8" letter-spacing="4.5">
-      SOFTWARE ENGINEERING • CLOUD ARCHITECTURE • AI
+    <!-- Subtitle Line: Enterprise Software & Cloud -->
+    <text x="2" y="52" font-family="'Fira Code', 'Inter', monospace" 
+          font-size="18" font-weight="500" fill="#94A3B8" letter-spacing="3">
+      ENGENHARIA DE SOFTWARE • CLOUD &amp; IA
     </text>
+
+    <!-- Status Pill: Sistemas 100% Operacionais -->
+    <g transform="translate(2, 82)">
+      <circle cx="6" cy="6" r="4" fill="#10B981"/>
+      <circle cx="6" cy="6" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="22" y="11" font-family="'Inter', -apple-system, sans-serif" 
+            font-size="13" font-weight="600" fill="#64748B" letter-spacing="0.5">
+        SISTEMAS 100% OPERACIONAIS • ORACLE CLOUD / LINUX
+      </text>
+    </g>
   </g>
 </svg>
